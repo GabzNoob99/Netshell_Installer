@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetShell</title>
+<link rel="icon" type="image/x-icon" href="ico.png">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#0d1117;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+h1{
+    font-size:3rem;
+    color:#58a6ff;
+}
+
+.subtitle{
+    color:#8b949e;
+    margin-top:10px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.preview{
+    width:100%;
+    border-radius:15px;
+    border:2px solid #30363d;
+    box-shadow:0 0 30px rgba(88,166,255,.2);
+}
+
+.preview2{
+    width:50%;
+    border-radius:15px;
+    border:2px solid #30363d;
+    box-shadow:0 0 30px rgba(88,166,255,.2);
+}
+
+.preview3{
+    width:50%;
+    border-radius:15px;
+    border:2px solid #30363d;
+    box-shadow:0 0 30px rgba(88,166,255,.2);
+}
+.previews{
+    display:flex;
+}
+
+.about{
+    margin-top:40px;
+    background:#161b22;
+    padding:25px;
+    border-radius:15px;
+}
+
+.about h2{
+    color:#58a6ff;
+    margin-bottom:15px;
+}
+
+.about p{
+    line-height:1.7;
+    color:#c9d1d9;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+.icon{
+    width:150px;
+    display:block;
+    margin:20px auto;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.download{
+    background:#238636;
+    color:white;
+}
+
+.download:hover{
+    background:#2ea043;
+    transform:translateY(-3px);
+}
+
+.github{
+    text-align:center;
+    margin:40px 0;
+}
+
+.github a{
+    color:#58a6ff;
+    text-decoration:none;
+}
+</style>
+<script>
+    document.querySelector('.download').addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = 'scale(1)';
+        }, 150);
+    });
+</script>
+</head>
+<body>
+    <header>
+        <h1>NetShell 1.6 Alfa</h1>
+        <p class="subtitle">Um Shell desenvolvido completamente em Python</p>
+    </header>
+    <div class="container">
+        <img src="ico.png" alt="NetShellicon" class="icon">
+        <img src="nrml.png" alt="NetShell" class="preview">
+        <div class="previews">
+            <img src="nrml2.png" alt="NetShell" class="preview2">
+            <img src="nrml3.png" alt="NetShell" class="preview3">
+        </div>
+        <div class="about">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            NetShell é um shell desenvolvido inteiramente em Python,
+            criado com o objetivo de fornecer uma experiência simples e
+            rápida para execução de comandos.
+        </p>
+        <br>
+        <p>
+            O projeto possui seu próprio shell, e depende de um terminal. Inspirado nos terminais
+            bash, O NetShell continua em desenvolvimento e recebe
+            melhorias constantes a cada versão.
+        </p>
+        <br>
+        <p>
+            ✔ Desenvolvido 100% em Python<br>
+            ✔ Código aberto (Open Source)<br>
+            ✔ Leve e rápido<br>
+            ✔ Fácil de usar, junto com o comando "help"<br>
+            ✔ Projeto em constante evolução
+        </p>
+    </div>
+    <br>
+    <div class="buttons">
+        <a class="btn download"
+            href="https://github.com/GabzNoob99/NetShell/raw/main/docs/instalation/NetShell-setup.exe" target="_blank">
+            📥 Baixar NetShell
+        </a>
+    
+    <div class="github">
+        <a href="https://github.com/GabzNoob99/NetShell" target="_blank">
+            Ver projeto no GitHub →
+        </a>
+    </div>
+</div>
+</body>
+</html>
